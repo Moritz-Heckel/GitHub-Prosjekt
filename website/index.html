@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gjennomsnittlig forventet levealder av forskjellige land</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Databehandling</h1>
+    </header>
+    <div class="container">
+        <div class="left-collum">
+            <h2>Download Result</h2>
+        </div>
+        <div class="middle-collum">
+            <a href="https://github.com/users/Moritz-Heckel/projects/3/views/1" class="github-link">
+                <h2>github</h2>
+            </a>
+        </div>
+        <div class="right-collum">
+            <h2>Report File</h2>
+        </div>
+        </div>
+
+    <div class = "flexy">
+        <div class = "dynamic">
+            <canvas id="userCountry"></canvas>
+            <input type="text" id="myText" placeholder="search country: ">
+            <button onclick="myFunction()" class="search-button">search</button>
+        </div>
+       <div class="static">
+            <div class="box">
+                <figure>
+                    <canvas id="lifeExpectancyChart"></canvas>
+                    <p>Land med størst og minst endring</p>
+                </figure>
+            </div>
+            
+            <div class="box">
+                <figure>
+                    <canvas id="continentPerYear" ></canvas>
+                    <p>gjennomsnittlig levealder per kontinent</p>
+                </figure>
+            </div>
+
+            <div class="box">
+                <figure>
+                    <canvas id="maleFemale" ></canvas>
+                    <p>gjennomsnittlig forventet levealder for kvinner vs menn</p>
+                </figure>
+            </div>
+
+            <div class="box">
+                <figure>
+                    <canvas id="exampleCountry"></canvas>
+                    <p>forventet levealder i Norge</p>
+                </figure>
+            </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

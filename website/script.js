@@ -5,7 +5,7 @@ function myFunction() {
 }
 
 
-fetch('../JSON/maleFemale.json')
+fetch('./JSON/maleFemale.json')
   .then(response => response.json())
   .then(data => {
     const ctx = document.getElementById('maleFemale').getContext('2d');
